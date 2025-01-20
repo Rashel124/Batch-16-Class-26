@@ -220,10 +220,15 @@ textarea::placeholder{
         align-items: center;
     }
 
-    .footer-logo{
-        width: 150px;
-        height: 60px;
+    /* .footer-logo{
+        width: 100px;
+        height: 100px;
 
+    } */
+
+    .footer-logo img{
+        border-radius: 100px;
+        padding-bottom: 5px;
     }
     .social-icons a{
         color: white;
