@@ -17,87 +17,49 @@
         justify-content: center;
         
     } */
-    
-    .video-banner {
+    .header-section{
         position: relative;
-        width: 100%;
-        height: 100vh; /* Full viewport height */
-        overflow: hidden;
-      }
-  
-      .video-banner video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensures the video covers the entire container */
-      }
-      .video-banner .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-        display: flex;
-        align-items: center;
-        justify-content: center;
         text-align: center;
-        color: #fff;
-      }
-  
-      .video-banner .overlay h1 {
-        font-size: 3rem;
-        margin: 0;
-      }
-  
-      .video-banner .overlay p {
-        font-size: 1.5rem;
-        margin-top: 10px;
-      }
-  
-      .video-banner .overlay .btn {
-        margin-top: 20px;
-        padding: 10px 20px;
-        font-size: 1rem;
-        color: #fff;
-        background-color: #007bff;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        text-decoration: none;
-        transition: transform 5s ease;
-      }
-  
-      .video-banner .overlay .btn:hover {
-        background-color: #10f367;
-        transform: translate(-10px)
-      }
-
-
-    /* .hero-content h1{
-        font-size: 4rem;
-        margin-bottom: 20px;
-        color: green;
-    }
-    .hero-content p{
-        font-size: 1.5rem;
-        margin-bottom: 30px;
+        overflow: hidden;
     }
 
-    .btn-custom{
-        background-color: #ff6600;
-        border: none;
-        padding: 15px 30px;
-        font-size: 1.2rem;
-        border-radius: 50px;
-        text-transform: capitalize;
-        text-decoration: none;
-        transition: background-color 3s ease;
+    .img-responsive{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
+    .hero-content{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%)
+    }
+.hero-content h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #f85606
+}
+.hero-content p{
 
-    .btn-custom:hover{
-            background-color: green;
-            color: white;
-    } */
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: rgb(151, 7, 24);
+}
+.btn-custom{
+    background-color: #f85606;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+
+}
+.btn-custom:hover{
+    background-color: green;
+    color: white;
+    transform: translate(-10px)
+}
 
     .slider {
         position: relative;
@@ -149,20 +111,23 @@
         transform: translate(-10px)
     }
 
-    /* .feature-card img{
-        width: 70px;
-        margin-bottom: 20px;
-    } */
+    .feature-card img{
+        
+        width: 300px;
+        height: 200px;
+    }
 
     .feature-card h5{
         font-size: 1.3rem;
         margin-top: 15px;
         margin-bottom: 15px;
-        font-size: 600;
+        /* font-size: 600; */
     }
 
     .feature-card p{
+        font-size: 1rem;
         color: #A52A2A
+       
     }
 
     .customer-section{
@@ -209,12 +174,6 @@
         
     }
 
-
-
-
-
-
-
     .checkout-section{
         padding: 60px 0;
     }
@@ -239,11 +198,16 @@
         border-radius: 10px;
     }
 
-    /* input::placeholder {
-        color: blue;
-      } */
-      
 
+input::placeholder{
+    color: #d1671bcd !important;
+    font-style: italic;
+}
+
+textarea::placeholder{
+    color: #d1671bcd !important;
+    font-style: italic;
+}
     .footer{
         padding: 60px 0;
         background-color: rgb(33, 30, 30);
@@ -271,7 +235,49 @@
 }
 
 
-@media (max-width: 769px) {
-    body {
-      font-size: 14px;
+
+
+/* Responsive Start */
+
+
+
+
+@media screen and (max-width:1200px){
+    .feature-card img{
+    width: 250px;
+    height: 150px;
+
     }
+}
+@media screen and (max-width:992px){
+    .feature-card img{
+    width: 150px;
+    height: 100px;
+
+    }
+}
+@media screen and (max-width:768px){
+    .feature-card img{
+    width: 150px;
+    height: 100px;
+
+    }
+ 
+}
+
+@media screen and (max-width:600px){
+    .hero-content h1{
+        font-size: 2rem;
+    }
+    .hero-content p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:392px){
+    .hero-content h1{
+        font-size: 1.5rem;
+    }
+    .hero-content p{
+        font-size: 0.5rem;
+    }
+}
